@@ -57,28 +57,77 @@ export default function HandHint({ size = 200 }) {
           transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
         >
           {/* Sleeve */}
-          <rect x="148" y="6" width="40" height="22" rx="6" fill="#7BB3EE" />
-          <rect x="148" y="24" width="40" height="6" rx="3" fill="#5499E6" />
-          {/* Palm */}
-          <path
-            d="M140 30 Q138 26 144 24 L188 24 Q196 24 196 32 L196 56 Q196 64 188 64 L156 64 Q148 64 144 60 Z"
-            fill="#FFE0C2"
-            stroke="#E8B98E"
+          <rect
+            x="170"
+            y="4"
+            width="50"
+            height="22"
+            rx="5"
+            fill="#7BB3EE"
+            stroke="#3F7DC4"
             strokeWidth="2"
           />
-          {/* Thumb */}
-          <path
-            d="M144 40 Q132 44 132 52 Q132 58 140 56 L148 52 Z"
-            fill="#FFE0C2"
-            stroke="#E8B98E"
+          <rect
+            x="170"
+            y="22"
+            width="50"
+            height="7"
+            rx="2"
+            fill="#5499E6"
+            stroke="#3F7DC4"
             strokeWidth="2"
           />
-          {/* Fingers pinching */}
+          {/* Back of hand with curled finger knuckle bumps */}
           <path
-            d="M150 56 Q146 62 150 68 Q156 70 158 64 Z"
+            d="M174 28
+               Q150 30 134 38
+               Q124 44 118 52
+               Q113 58 119 61
+               Q124 60 128 55
+               Q133 58 138 55
+               Q143 58 148 55
+               Q153 58 158 53
+               Q172 47 184 39
+               Q198 32 210 28
+               Z"
             fill="#FFE0C2"
-            stroke="#E8B98E"
-            strokeWidth="2"
+            stroke="#7A5A3A"
+            strokeWidth="2.5"
+            strokeLinejoin="round"
+          />
+          {/* Thumb folded over the top, curving down to the pinch */}
+          <path
+            d="M140 30
+               Q122 36 114 48
+               Q108 56 116 60
+               Q124 56 132 48
+               Q142 40 146 34
+               Z"
+            fill="#FFE0C2"
+            stroke="#7A5A3A"
+            strokeWidth="2.5"
+            strokeLinejoin="round"
+          />
+          {/* Index fingertip extending down to pinch */}
+          <path
+            d="M118 60
+               Q112 64 114 70
+               Q119 73 123 69
+               Q125 65 123 61
+               Z"
+            fill="#FFE0C2"
+            stroke="#7A5A3A"
+            strokeWidth="2.5"
+            strokeLinejoin="round"
+          />
+          {/* Inner palm crease / knuckle detail */}
+          <path
+            d="M130 50 Q134 52 138 50"
+            stroke="#C9A07A"
+            strokeWidth="1.5"
+            fill="none"
+            strokeLinecap="round"
+            opacity="0.7"
           />
         </motion.g>
 
